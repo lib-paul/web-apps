@@ -1,0 +1,18 @@
+{% extends "layout/base.html" %}
+
+{% block main %}
+<div class="row min-vw-100 h-50 pt-5">
+    <div class="container-fluid col-md-4 ">
+        <form action="{% url 'calculadora' %}" method="post">
+            {% csrf_token %}
+            {{ form }}
+        </form>
+    </div>
+    <div class="col-md-6">
+        <h1>Calculado</h1>
+    </div>
+</div>
+
+
+
+{% endblock main %}

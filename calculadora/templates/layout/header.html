@@ -8,19 +8,19 @@
         <div class="collapse navbar-collapse" id="navbarNavPills">
           <ul class="nav nav-pills">
             <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="{% url 'home' %}">Home</a>
+              <a class="nav-link {% if request.path == '/' %}active{% endif %}" aria-current="page" href="{% url 'home' %}">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'calculadora' %}">Calculadoras</a>
+              <a class="nav-link {% if request.path == '/calculadora/' %}active{% endif %}" href="{% url 'calculadora' %}">Calculadoras</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'about' %}">About</a>
+              <a class="nav-link {% if request.path == '/about/' %}active{% endif %}" href="{% url 'about' %}">About</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'faq' %}">Preguntas Frecuentes</a>
+              <a class="nav-link {% if request.path == '/faq/' %}active{% endif %}" href="{% url 'faq' %}">Preguntas Frecuentes</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="{% url 'contacto' %}">Contact us</a>
+              <a class="nav-link {% if request.path == '/contacto/' %}active{% endif %}" href="{% url 'contacto' %}">Contact us</a>
             </li>
           </ul>
         </div>
