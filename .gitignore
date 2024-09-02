@@ -1,0 +1,60 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Database
+db.sqlite3
+db.sqlite3-journal
+
+# Django specific
+*.log
+*.pot
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Migrations
+**/migrations/
+**/migrations/*.pyc
+
+# Media
+/media
+/media/*
+
+# Static files
+/static
+/static/*
+
+# Environment variables
+.env
+
+# Virtual environments
+venv/
+env/
+ENV/
+
+# VSCode settings
+.vscode/
+
+# MacOS specific files
+.DS_Store
+
+# PyCharm specific files
+.idea/
+
+# Pipenv specific files
+Pipfile.lock
+
+# Docker specific files
+docker-compose.yml
+Dockerfile
+
+# Node.js specific files (if using npm/yarn for front-end)
+node_modules/
+npm-debug.log
+yarn-error.log
