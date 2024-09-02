@@ -3,13 +3,10 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    return render(request, 'index.html', name="home")
+    return render(request, 'index.html')
 
 def calculadora(request):
     return render(request, 'calculadora.html', name="calculadora")
-
-def armar_paquetes(request):
-    return render(request, 'armar_paquetes.html', name="armar_paquetes")
 
 def faq(request):
     return render(request, 'faq.html', name="faq")
@@ -17,5 +14,5 @@ def faq(request):
 def contacto(request):
     return render(request, 'contacto.html' , name="contacto")
 
-def referrall(request):
-    return render(request, 'referrall.html', name="referrall")
+def about(request):
+    return render(request, 'about.html', name="about")
