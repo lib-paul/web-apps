@@ -1,2 +1,2 @@
 def calcular_consumo(data):
-    return (data['consumo_anterior'] - data['consumo_actual']) * data['precio_kwh']
+    return (data['consumo_actual'] - data['consumo_anterior']) * data['precio_kwh']
